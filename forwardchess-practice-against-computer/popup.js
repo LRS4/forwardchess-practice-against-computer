@@ -9,7 +9,7 @@ document.getElementById('run').addEventListener('click', async () => {
     func: () => {
       console.log('🚀 Running setup from extension popup...');
       const spans = document.querySelectorAll('.vs-button-text.vs-button--text');
-      const targetSpan = Array.from(spans).find(span => span.textContent.trim() === 'FEN to Clipboard');
+      const targetSpan = Array.from(spans).find(span => span.textContent.trim() === 'Copy FEN');
 
       if (targetSpan) {
         const button = targetSpan.closest('button');
